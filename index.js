@@ -22,7 +22,3 @@ module.exports = function(pollId, cb) {
         cb(null, result);
     }));
 };
-
-module.exports("s67xgqa7xy3hn7i88rsy2rtz", function(err, data) {
-    console.log(data);
-});
