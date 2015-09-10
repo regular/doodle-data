@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/regular/doodle-data/issues"
   },
-  "homepage": "https://github.com/regular/doodle-data#readme"
+  "homepage": "https://github.com/regular/doodle-data#readme",
+  "dependencies": {
+    "concat-stream": "^1.5.0",
+    "hyperquest": "^1.2.0",
+    "regex-escape": "^3.0.0"
+  }
 }
