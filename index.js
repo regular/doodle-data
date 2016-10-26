@@ -6,7 +6,7 @@ var prefix = "http://doodle.com/poll/";
 
 module.exports = function(pollId, cb) {
     var magic = '{"poll":{"prettyUrl":"' + prefix + pollId.substr(0,16) + '"';
-    hyperquest(prefix + pollId + "/admin").pipe(concat(function(buffer) {
+    hyperquest(prefix + pollId).pipe(concat(function(buffer) {
         var page = buffer.toString('utf-8');
         var re = "(" + regescape(magic)+".*)\\s*\\)\\s*;$";
         var match = page.match(new RegExp(re,'m'));
